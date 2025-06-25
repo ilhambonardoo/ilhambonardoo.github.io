@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-regal-gray: #bfbaa6;
+  --font-inter: "Inter", sans-serif;
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.zoom-effect:hover {
+  transform: scale(1.03); /* Zooms in by 5% */
+}
+
+.hamburger {
+  /* ... gaya-gaya lain untuk tombol hamburger ... */
+  cursor: pointer;
+  /* --- Ini bagian yang penting! --- */
+  transition: transform 0.3s ease-in-out; /* Tambahkan transisi untuk efek putar */
+}
+
+.hamburger-active {
+  /* Jika kamu ingin hamburger berputar saat aktif */
+  transform: rotate(90deg); /* Putar 90 derajat */
+}
