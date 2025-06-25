@@ -1273,6 +1273,11 @@
       background-color: var(--color-gray-600);
     }
   }
+  .lg\:bg-stone-500 {
+    @media (width >= 64rem) {
+      background-color: var(--color-stone-500);
+    }
+  }
   .lg\:bg-transparent {
     @media (width >= 64rem) {
       background-color: transparent;
