@@ -383,6 +383,18 @@
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
   }
+  .mr-7 {
+    margin-right: calc(var(--spacing) * 7);
+  }
+  .mr-8 {
+    margin-right: calc(var(--spacing) * 8);
+  }
+  .mr-24 {
+    margin-right: calc(var(--spacing) * 24);
+  }
+  .mr-25 {
+    margin-right: calc(var(--spacing) * 25);
+  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
@@ -695,6 +707,9 @@
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
+  .px-14 {
+    padding-inline: calc(var(--spacing) * 14);
+  }
   .px-20 {
     padding-inline: calc(var(--spacing) * 20);
   }
@@ -745,6 +760,18 @@
   }
   .pt-36 {
     padding-top: calc(var(--spacing) * 36);
+  }
+  .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-20 {
+    padding-right: calc(var(--spacing) * 20);
+  }
+  .pr-24 {
+    padding-right: calc(var(--spacing) * 24);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -862,6 +889,9 @@
   }
   .text-stone-500 {
     color: var(--color-stone-500);
+  }
+  .text-stone-600 {
+    color: var(--color-stone-600);
   }
   .text-stone-700 {
     color: var(--color-stone-700);
@@ -1090,9 +1120,19 @@
       width: calc(2/3 * 100%);
     }
   }
+  .md\:bg-stone-500 {
+    @media (width >= 48rem) {
+      background-color: var(--color-stone-500);
+    }
+  }
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:text-stone-500 {
+    @media (width >= 48rem) {
+      color: var(--color-stone-500);
     }
   }
   .lg\:static {
@@ -1273,6 +1313,21 @@
     @media (width >= 64rem) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .lg\:text-stone-300 {
+    @media (width >= 64rem) {
+      color: var(--color-stone-300);
+    }
+  }
+  .lg\:text-stone-500 {
+    @media (width >= 64rem) {
+      color: var(--color-stone-500);
+    }
+  }
+  .lg\:text-white {
+    @media (width >= 64rem) {
+      color: var(--color-white);
     }
   }
   .lg\:shadow-none {

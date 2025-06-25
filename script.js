@@ -1,7 +1,6 @@
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 const header = document.getElementById("header");
-let lastScrollY = 3020;
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
@@ -13,14 +12,4 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.add("fa-bars");
   }
   navMenu.classList.toggle("hidden");
-});
-
-document.addEventListener("scroll", function () {
-  const currentScrollY = window.scrollY;
-  console.log(currentScrollY);
-  if (currentScrollY > lastScrollY) {
-    header.classList.remove("fixed");
-  } else {
-    header.classList.add("fixed");
-  }
 });
